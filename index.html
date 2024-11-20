@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Weather Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="icon" href="mars-fav.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mars Weather Data</h1>
+        </header>
+
+        <main>
+            <section class="weather-summary">
+                <h2>Weather Summary</h2>
+                <div id="weather-info" class="data-card"></div>
+                <div id="temperature-chart-container">
+                    <canvas id="temperature-chart"></canvas>
+                </div>                
+            </section>
+
+            <section class="wind-direction">
+                <h2>Wind Direction</h2>
+                <div id="wind-rose" class="data-card"></div>
+            </section>
+
+            <section class="mars-globe">
+                <h2>Mars Globe</h2>
+                <div id="mars-globe-container" style="width: 30px; height: 30px;"></div>
+            </section>
+
+            <section class="quiz-section">
+                <h2>Mars Quiz</h2>
+                <div id="quiz-container" class="data-card">
+                    <p id="quiz-question"></p>
+                    <div id="quiz-options"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Data from NASA Mars Weather API</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #d17f34; /* Mars surface reddish color */
+  color: #fff;
+  line-height: 1.6;
+  background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/mars_surface.jpg'); /* Mars background image */
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+}
+
+/* Container to center content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay to make text stand out */
+  border-radius: 10px;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  background-color: #1a1a1a; /* Dark gray for a sleek, professional look */
+  color: #ff9c00; /* Mars-themed accent color */
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Main Content Section */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+section {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for sections */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ff9c00; /* Mars-themed accent color */
+}
+
+/* Data Cards */
+.data-card {
+  padding: 15px;
+  background-color: #6a4e23; /* Mars surface brownish color */
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.data-card p {
+  margin-bottom: 10px;
+}
+
+/* Wind Rose Styling */
+#wind-rose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background for wind rose */
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1a1a1a; /* Matching dark gray for footer */
+  color: #ff9c00; /* Mars-themed accent color */
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .data-card {
+    font-size: 0.9rem;
+  }
+}
+/* Additions for New Features */
+
+.mars-globe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#mars-globe-container {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-section {
+  margin-top: 20px;
+}
+
+#quiz-options button {
+  background-color: #ff9c00;
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#quiz-options button:hover {
+  background-color: #e68a00;
+}
